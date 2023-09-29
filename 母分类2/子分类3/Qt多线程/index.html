@@ -6,6 +6,23 @@
 
 
 <head>
+  <meta name="baidu-site-verification" content="codeva-9XPZaiy24f" />
+  <meta name="google-site-verification" content="iKfk41-7IB31giGsS85H53G6zjnznJUfmfawPXmej9U" />
+  <script>
+  (function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://cznewborn.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
+
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
   <link rel="icon" href="/img/favicon.png">
@@ -23,15 +40,15 @@
 <meta property="og:site_name" content="Leia Blog">
 <meta property="og:description" content="文章的前情摘要">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s1.ax1x.com/2023/07/09/pCgxJAI.png">
+<meta property="og:image" content="https://s1.ax1x.com/2023/08/11/pPmjalR.png">
 <meta property="article:published_time" content="2023-04-27T06:35:57.000Z">
-<meta property="article:modified_time" content="2023-07-09T07:42:51.015Z">
+<meta property="article:modified_time" content="2023-08-11T01:36:25.234Z">
 <meta property="article:author" content="ChenZhao">
 <meta property="article:tag" content="tag1">
 <meta property="article:tag" content="tag2">
 <meta property="article:tag" content="tag3">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://s1.ax1x.com/2023/07/09/pCgxJAI.png">
+<meta name="twitter:image" content="https://s1.ax1x.com/2023/08/11/pPmjalR.png">
   
   
   <title>Qt多线程 - Leia Blog</title>
@@ -67,6 +84,13 @@
 <link  rel="stylesheet" href="/css/main.css" />
 
 <!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/indeximg-hover.css">
+<link rel="stylesheet" href="/css/custom.css">
+<link rel="stylesheet" href="/css/scroll.css">
+<link rel="stylesheet" href="/css/valine.css">
+
 
 
   <script id="fluid-configs">
@@ -175,7 +199,7 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('https://w.wallhaven.cc/full/we/wallhaven-weye17.png') no-repeat center center;
+         style="background: url('https://s1.ax1x.com/2023/01/02/pSPVr1e.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -201,7 +225,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.2k 字
+      1.4k 字
     </span>
   
 
@@ -210,7 +234,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      11 分钟
+      12 分钟
     </span>
   
 
@@ -251,13 +275,18 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2023年7月9日 下午
+                  本文最后更新于：2023年8月11日 上午
                 
               </p>
             
             <div class="markdown-body">
               <h1 id="qt多线程">Qt多线程</h1>
 <p>  文章的前情摘要xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+<blockquote>
+<p><a
+target="_blank" rel="noopener" href="https://www.dushibaiyu.com/2015/07/qt-signals-slots-connect.html">Qt信号槽的一些事
+| 渡世白玉 (dushibaiyu.com)</a></p>
+</blockquote>
 <h2 id="一多线程">一、多线程</h2>
 <p>  </p>
 <h3 id="信号与槽的连接方式">(1)信号与槽的连接方式</h3>
@@ -278,27 +307,34 @@ id="连接方式四blockingqueuedconnection">4.连接方式四：BlockingQueuedC
 <p>槽函数的调用时机与Qt::QueuedConnection一致，不过发送完信号后发送者所在线程会阻塞，直到槽函数运行完。<strong>使用该连接方式，接收者和发送者绝对不能在一个线程，否则程序会死锁！！！在多线程间需要同步的场合可能需要这个</strong>。</p>
 <h4 id="连接方式五uniqueconnection">4.连接方式五：UniqueConnection</h4>
 <p>严格上来说相比上面四种连接方式，它并不算新的连接方式，而是用于修饰上面的四种连接方式。他实现的效果就是避免重复连接，因为Qt的信号槽是可以同一个信号和槽函数重复多次连接。这种通常都会是只执行一次就好，那就通过这个标志位进行修饰，达到多次连接（实际上也只是连接了一次）也只调用一次槽函数的效果。用(Qt::ConnectionType|Qt::UniqueConnection)来修饰。</p>
-<h3 id="级标题">(2)2级标题</h3>
-<h3 id="级标题-1">(3)2级标题</h3>
-<h3 id="级标题-2">(4)2级标题</h3>
-<h2 id="二1级标题">二、1级标题</h2>
+<h3 id="创建多线程的两种方式">(2)创建多线程的两种方式</h3>
+<h4 id="继承qthread">1. 继承QThread</h4>
+<p>继承 QThread 是创建线程的一个普通方法，其中创建的线程只有
+run()方法在线程里的，其他类内定义的方法都在主线程内。</p>
+<h4 id="继承qobject">2. 继承QObject</h4>
+<p>继承 QObject
+类的方法更加灵活，它通过QObject::moveToThread()函数，将一个
+QObeject的类转移到一个线程里执行。</p>
+<h3 id="级标题">(3)2级标题</h3>
+<h3 id="级标题-1">(4)2级标题</h3>
+<h2 id="二线程池">二、线程池</h2>
 <p>  引言二</p>
-<h3 id="级标题-3">(1)2级标题</h3>
-<h3 id="级标题-4">(2)2级标题</h3>
-<h3 id="级标题-5">(3)2级标题</h3>
-<h3 id="级标题-6">(4)2级标题</h3>
-<h2 id="三1级标题">三、1级标题</h2>
+<h3 id="级标题-2">(1)2级标题</h3>
+<h3 id="级标题-3">(2)2级标题</h3>
+<h3 id="级标题-4">(3)2级标题</h3>
+<h3 id="级标题-5">(4)2级标题</h3>
+<h2 id="三并发编程">三、并发编程</h2>
 <p>  引言三</p>
-<h3 id="级标题-7">(1)2级标题</h3>
-<h3 id="级标题-8">(2)2级标题</h3>
-<h3 id="级标题-9">(3)2级标题</h3>
-<h3 id="级标题-10">(4)2级标题</h3>
+<h3 id="级标题-6">(1)2级标题</h3>
+<h3 id="级标题-7">(2)2级标题</h3>
+<h3 id="级标题-8">(3)2级标题</h3>
+<h3 id="级标题-9">(4)2级标题</h3>
 <h2 id="四1级标题">四、1级标题</h2>
 <p>  引言四</p>
-<h3 id="级标题-11">(1)2级标题</h3>
-<h3 id="级标题-12">(2)2级标题</h3>
-<h3 id="级标题-13">(3)2级标题</h3>
-<h3 id="级标题-14">(4)2级标题</h3>
+<h3 id="级标题-10">(1)2级标题</h3>
+<h3 id="级标题-11">(2)2级标题</h3>
+<h3 id="级标题-12">(3)2级标题</h3>
+<h3 id="级标题-13">(4)2级标题</h3>
 
             </div>
             <hr>
@@ -347,9 +383,9 @@ id="连接方式四blockingqueuedconnection">4.连接方式四：BlockingQueuedC
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/%E7%9B%B8%E6%9C%BA/%E5%B7%A5%E4%B8%9A%E7%9B%B8%E6%9C%BA%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%8E%9F%E7%90%86%E8%AE%B2%E8%A7%A3/">
+                      <a href="/%E6%AF%8D%E5%88%86%E7%B1%BB2/%E5%AD%90%E5%88%86%E7%B1%BB3/%E5%BE%AE%E5%88%86%E8%B7%9F%E8%B8%AA%E5%99%A8/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">工业相机参数介绍及原理讲解</span>
+                        <span class="hidden-mobile">微分跟踪器</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -357,8 +393,8 @@ id="连接方式四blockingqueuedconnection">4.连接方式四：BlockingQueuedC
                   <article class="post-next col-6">
                     
                     
-                      <a href="/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/Kalman%E6%BB%A4%E6%B3%A2%E7%AE%97%E6%B3%95%E4%BB%8B%E7%BB%8D/">
-                        <span class="hidden-mobile">Kalman滤波算法介绍</span>
+                      <a href="/%E7%9B%B8%E6%9C%BA/%E5%B7%A5%E4%B8%9A%E7%9B%B8%E6%9C%BA%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D%E5%8F%8A%E5%8E%9F%E7%90%86%E8%AE%B2%E8%A7%A3/">
+                        <span class="hidden-mobile">工业相机参数介绍及原理讲解</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -415,6 +451,12 @@ id="连接方式四blockingqueuedconnection">4.连接方式四：BlockingQueuedC
 </div>
 
 <!-- Custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-x-md">
+    <div class="container custom post-custom mx-auto">
+      <img src="https://octodex.github.com/images/jetpacktocat.png" srcset="/img/loading.gif" lazyload class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">
+    </div>
+  </div>
 
 
     
@@ -484,6 +526,16 @@ id="连接方式四blockingqueuedconnection">4.连接方式四：BlockingQueuedC
 
 
   
+  <!-- 备案信息 -->
+  <div class="beian">
+    <span>
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+        鄂ICP备2023014081号-1
+      </a>
+    </span>
+    
+  </div>
+
 
   
 </footer>
