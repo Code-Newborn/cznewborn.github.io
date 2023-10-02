@@ -33,22 +33,22 @@
   <meta name="author" content="ChenZhao">
   <meta name="keywords" content="">
   
-    <meta name="description" content="https:&#x2F;&#x2F;z1.ax1x.com&#x2F;2023&#x2F;10&#x2F;02&#x2F;pPLy8df.png">
+    <meta name="description" content="在STM32微控制器上实现实时操作系统（RTOS）可以提供更高级别的任务管理和调度功能，以增强系统的并发性和响应性。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="STM32移植UCOSIII">
 <meta property="og:url" content="https://www.cznewborn.com/RTOS/ucosIII/STM32%E7%A7%BB%E6%A4%8DUCOS/index.html">
 <meta property="og:site_name" content="Leia Blog">
-<meta property="og:description" content="https:&#x2F;&#x2F;z1.ax1x.com&#x2F;2023&#x2F;10&#x2F;02&#x2F;pPLy8df.png">
+<meta property="og:description" content="在STM32微控制器上实现实时操作系统（RTOS）可以提供更高级别的任务管理和调度功能，以增强系统的并发性和响应性。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://s1.ax1x.com/2023/08/11/pPmjalR.png">
+<meta property="og:image" content="https://z1.ax1x.com/2023/10/02/pPLy8df.png">
 <meta property="article:published_time" content="2023-10-02T08:17:11.000Z">
-<meta property="article:modified_time" content="2023-10-02T09:03:27.390Z">
+<meta property="article:modified_time" content="2023-10-02T09:10:53.093Z">
 <meta property="article:author" content="ChenZhao">
 <meta property="article:tag" content="STM32H743">
 <meta property="article:tag" content="ucosIII">
 <meta property="article:tag" content="RTOS">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://s1.ax1x.com/2023/08/11/pPmjalR.png">
+<meta name="twitter:image" content="https://z1.ax1x.com/2023/10/02/pPLy8df.png">
   
   
   <title>STM32移植UCOSIII - Leia Blog</title>
@@ -393,7 +393,6 @@ mjx-container[display="true"] + br {
             
             <div class="markdown-body">
               <h1 id="stm32移植ucosiii">STM32移植UCOSIII</h1>
-<p>  </p>
 <p>  早期嵌入式Q开发没有嵌入式操作系统的概念，直接操作裸机，在裸机上写程序，比如用51单片机基本就没有操作系统的概念。通常把程序分为两部分：前台系统和后台系统。传统简单的小系统通常是前后台系统，这样的程序包括一个死循环和若干个中断服务程序：应用程序是一个无限循环，循环中调用API函数完成所需的操作，这个大循环就叫做后台系统。中断服务程序用于处理系统的异步事件，也就是前台系统。前台是中断级，后台是任务级。</p>
 <p>  在前后台系统下，所有的任务的优先级是平等的，且是以FIFO的方式排列。也就是说，后面的任务必须等待前面的任务都完成之后才可以执行。在前后台系统下，实时性非常差，而且随着任务数量的增多，实时性会愈差。就好像我们上课时突然内急（优先级很高)，需要立刻去WC，但是却不得不等到下课（优先级不高）。这种情况下大概率会发生什么样的事情相信大家应该也猜得到吧。在程序上表现出来可能就是数据丢失，或者响应慢（比如步进电机过冲）等效果了。尽管也可以利用定时器等手段去手动分配时间片来增强实时性，但这样的方法容易造成程序的高度耦合，与程序开发的“高内聚，低耦合”相悖，这样的代码肯定是很难管理和维护的。笔者在厂里修改一个别人写的程序时（主要是添加功能），亲切的体会到了这一点。该代码是一个非常标准的前后台系统，其中还利用定时器划分了一些时间片来执行相关任务。可仅仅在main函数所在的C文件中就定义了十几个flag标志变量，笔者在读代码时也是花费了不少功夫。再加上一些外设在大循环和定时器中断中都有可能被访问，协调不好就容易造成错误。</p>
 <p>  而在RTOS实时操作系统下进行程序开发，每个任务都是独立运行的一个有限次或无限次循环，一般情况下不会互相影响（除非栈溢出等因素），因而很容易管理和维护。每个任务都可以设置优先级，RTOS的内核大多都是可抢占式的。高优先级的任务一但就绪就可以夺走低优先级任务的CPU使用权，实时性相比于前后台系统大幅度提高。而且RTOS会提供一些内核对象供用户使用，比如信号量，常用作任务同步和共享资源保护等。</p>
