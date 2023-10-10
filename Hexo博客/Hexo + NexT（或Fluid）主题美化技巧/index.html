@@ -42,7 +42,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s1.ax1x.com/2023/03/20/ppNl3YF.png">
 <meta property="article:published_time" content="2022-02-16T08:56:21.000Z">
-<meta property="article:modified_time" content="2023-09-15T06:38:58.325Z">
+<meta property="article:modified_time" content="2023-10-06T14:23:38.538Z">
 <meta property="article:author" content="ChenZhao">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="NexT主题">
@@ -345,7 +345,7 @@ mjx-container[display="true"] + br {
       <i class="iconfont icon-clock-fill"></i>
       
       
-      89 分钟
+      93 分钟
     </span>
   
 
@@ -386,7 +386,7 @@ mjx-container[display="true"] + br {
             
               <p class="note note-info">
                 
-                  本文最后更新于：2023年9月15日 下午
+                  本文最后更新于：2023年10月6日 晚上
                 
               </p>
             
@@ -469,7 +469,7 @@ Error: Spawn failed解决方式</h3>
 <p>  Hexo使用Nunjucks渲染转义内容
 。用<code>{{ }}</code>或<code>{%`、`%}</code>包装的内容将被解析，并可能导致问题。您可以使用原始标签插件将敏感内容包含起来。找到正文里面<code>{{`、`}}</code>、<code>{%`、`%}</code>这样的语句，主要是公式内容，作如下修改：</p>
 <p>若是行内公式则将<code>{{`、`}}</code>用空格进行间隔开：<code>{ {</code>、<code>} }</code></p>
-<p>若是段外公式则在公式首尾加入如下内容：</p>
+<p>若是段外公式则在公式首尾加入如下内容，并且进入源码模式，检查确认段外公式最后留出一行空行（保证公式显示正确）：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">$${% raw %}<br>公式内容<br>$${% endraw %}<br></code></pre></div></td></tr></table></figure>
 <p>定位错误位置：</p>
 <p><img src="https://z1.ax1x.com/2023/09/14/pPR68un.png" srcset="/img/loading.gif" lazyload alt="错误位置定位"></p>
@@ -525,6 +525,18 @@ Later</strong>，并且注意公式中的<code>{{`和`}}</code>符号，之间�
 <figure class="highlight css"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs css"><span class="hljs-comment">/*INFO 段落行间距设置*/</span><br><span class="hljs-selector-class">.post-content</span> <span class="hljs-selector-tag">p</span> {<br>  <span class="hljs-attribute">letter-spacing</span>:<span class="hljs-number">2px</span>; <span class="hljs-comment">/*文字间距为*/</span><br>  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">2.5</span>; <span class="hljs-comment">/*行间距为字体大小的2.5倍*/</span><br>  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0px</span>; <span class="hljs-comment">/*段前距离*/</span><br>  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>; <span class="hljs-comment">/*段后距离*/</span><br>  <span class="hljs-attribute">text-align</span>: justify; <span class="hljs-comment">/*文本对齐方式*/</span><br>}<br><br><span class="hljs-comment">/*INFO 下划线设置*/</span><br><span class="hljs-selector-class">.post-content</span> hr {<br>  <span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>; <span class="hljs-comment">/*将高度设为0*/</span><br>  <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span>; <span class="hljs-comment">/*设置间距*/</span><br>}<br><br><span class="hljs-comment">/*INFO 内容里列表*/</span><br><span class="hljs-selector-class">.post-content</span> <span class="hljs-selector-tag">li</span> {<br>  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">15px</span>;<br>  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;<br>}<br><br><span class="hljs-comment">/*INFO 内容里列表*/</span><br><span class="hljs-selector-class">.post-content</span> <span class="hljs-selector-tag">ol</span> {<br>  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0px</span>;<br>  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0px</span>;<br>}<br></code></pre></div></td></tr></table></figure>
 <p>然后在<code>_config_fluid.yml</code>文件中的<code>custom_css</code>项添加文件路径：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yaml"><span class="hljs-comment"># 指定自定义 .css 文件路径，用法和 custom_js 相同</span><br><span class="hljs-comment"># The usage is the same as custom_js</span><br><span class="hljs-attr">custom_css:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">/css/indeximg-hover.css</span> <span class="hljs-comment"># 文章索引封面悬浮放大</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">/css/custom.css</span> <span class="hljs-comment"># 文章段落</span><br></code></pre></div></td></tr></table></figure>
+<h3 id="文章内图片并排显示">(9)文章内图片并排显示</h3>
+<blockquote>
+<p>参考：<a target="_blank" rel="noopener" href="https://fluid-dev.github.io/hexo-fluid-docs/en/guide/#tag-plugin">Guide
+| Hexo Fluid Docs (fluid-dev.github.io)</a>中的Group
+Images描述，为方便在markdown中预览图片，采用html方式预览，不影响渲染。</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs markdown">{% gi total n1-n2-... %}<br><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">align</span>=<span class="hljs-string">"center"</span>&gt;</span></span><br><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">alt</span> = <span class="hljs-string">"图片1"</span>/&gt;</span></span><br><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">alt</span> = <span class="hljs-string">"图片2"</span>/&gt;</span></span><br><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"300"</span> <span class="hljs-attr">alt</span> = <span class="hljs-string">"图片3"</span>/&gt;</span></span><br><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"url"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"300"</span> <span class="hljs-attr">alt</span> = <span class="hljs-string">"图片4"</span>/&gt;</span></span><br><span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br>{% endgi %}<br></code></pre></div></td></tr></table></figure>
+<blockquote>
+<p>total：图片总数 n1-n2-... ：每行中的图片数</p>
+</blockquote>
+<div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="https://z1.ax1x.com/2023/10/06/pPXcLZR.png" srcset="/img/loading.gif" lazyload width="400" alt="图片1"></div><div class="group-image-wrap"><img src="https://z1.ax1x.com/2023/10/06/pPXcdat.png" srcset="/img/loading.gif" lazyload width="400" alt="图片2"></div></div></div>
+<div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="https://z1.ax1x.com/2023/10/06/pPXcLZR.png" srcset="/img/loading.gif" lazyload width="300" alt="图片3"></div><div class="group-image-wrap"><img src="https://z1.ax1x.com/2023/10/06/pPXcdat.png" srcset="/img/loading.gif" lazyload width="300" alt="图片4"></div></div></div>
 
             </div>
             <hr>
