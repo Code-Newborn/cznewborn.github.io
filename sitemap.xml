@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.cznewborn.com/%E6%AF%8D%E5%88%86%E7%B1%BB2/%E5%AD%90%E5%88%86%E7%B1%BB3/STM32CubeMX%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</loc>
+    <loc>https://www.cznewborn.com/STM32/STM32CubeMX/HAL/STM32CubeMX%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3/</loc>
     
     <lastmod>2024-02-14</lastmod>
     
@@ -1061,6 +1061,20 @@
   
   <url>
     <loc>https://www.cznewborn.com/categories/Qt/%E5%A4%9A%E7%BA%BF%E7%A8%8B/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/categories/STM32/STM32CubeMX/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/categories/STM32/STM32CubeMX/HAL/</loc>
     <lastmod>2024-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
