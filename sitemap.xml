@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.cznewborn.com/%E6%AF%8D%E5%88%86%E7%B1%BB2/%E5%AD%90%E5%88%86%E7%B1%BB3/%E8%AE%A4%E8%AF%86%E4%BA%8C%E6%9E%81%E7%AE%A1/</loc>
+    <loc>https://www.cznewborn.com/%E5%85%83%E5%99%A8%E4%BB%B6/%E4%BA%8C%E6%9E%81%E7%AE%A1/%E8%AE%A4%E8%AF%86%E4%BA%8C%E6%9E%81%E7%AE%A1/</loc>
     
-    <lastmod>2024-01-29</lastmod>
+    <lastmod>2024-02-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -749,6 +749,48 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://www.cznewborn.com/tags/%E4%BA%8C%E6%9E%81%E7%AE%A1/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/tags/%E7%A8%B3%E5%8E%8B%E4%BA%8C%E6%9E%81%E7%AE%A1/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/tags/TVS/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/tags/LED/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/tags/%E8%82%96%E7%89%B9%E5%9F%BA%E4%BA%8C%E6%9E%81%E7%AE%A1/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/tags/%E9%BD%90%E7%BA%B3%E4%BA%8C%E6%9E%81%E7%AE%A1/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -970,6 +1012,20 @@
   
   <url>
     <loc>https://www.cznewborn.com/categories/%E6%BB%A4%E6%B3%A2%E7%AE%97%E6%B3%95/%E7%B2%92%E5%AD%90%E6%BB%A4%E6%B3%A2%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/categories/%E5%85%83%E5%99%A8%E4%BB%B6/</loc>
+    <lastmod>2024-02-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/categories/%E5%85%83%E5%99%A8%E4%BB%B6/%E4%BA%8C%E6%9E%81%E7%AE%A1/</loc>
     <lastmod>2024-02-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
