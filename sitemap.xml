@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.cznewborn.com/%E5%85%83%E5%99%A8%E4%BB%B6/%E5%9C%BA%E6%95%88%E5%BA%94%E6%99%B6%E4%BD%93%E7%AE%A1/%E8%AE%A4%E8%AF%86MOS%E7%AE%A1/</loc>
+    <loc>https://www.cznewborn.com/%E6%8E%A7%E5%88%B6/%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95/%E6%A8%A1%E7%B3%8A%E6%8E%A7%E5%88%B6/%E6%A8%A1%E7%B3%8A%E6%8E%A7%E5%88%B6/</loc>
     
     <lastmod>2024-09-16</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://www.cznewborn.com/%E6%AF%8D%E5%88%86%E7%B1%BB2/%E5%AD%90%E5%88%86%E7%B1%BB3/%E6%A8%A1%E7%B3%8A%E6%8E%A7%E5%88%B6/</loc>
+    <loc>https://www.cznewborn.com/%E5%85%83%E5%99%A8%E4%BB%B6/%E5%9C%BA%E6%95%88%E5%BA%94%E6%99%B6%E4%BD%93%E7%AE%A1/%E8%AE%A4%E8%AF%86MOS%E7%AE%A1/</loc>
     
     <lastmod>2024-09-16</lastmod>
     
@@ -375,27 +375,6 @@
   
   <url>
     <loc>https://www.cznewborn.com/tags/Numcpp/</loc>
-    <lastmod>2024-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.cznewborn.com/tags/tag1/</loc>
-    <lastmod>2024-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.cznewborn.com/tags/tag2/</loc>
-    <lastmod>2024-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.cznewborn.com/tags/tag3/</loc>
     <lastmod>2024-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -919,6 +898,41 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://www.cznewborn.com/tags/%E6%A8%A1%E7%B3%8A%E6%8E%A7%E5%88%B6/</loc>
+    <lastmod>2024-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/tags/%E9%9A%B6%E5%B1%9E%E5%BA%A6/</loc>
+    <lastmod>2024-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/tags/%E6%A8%A1%E7%B3%8A%E5%8C%96/</loc>
+    <lastmod>2024-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/tags/%E6%A8%A1%E7%B3%8A%E8%A7%84%E5%88%99/</loc>
+    <lastmod>2024-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/tags/%E8%A7%A3%E6%A8%A1%E7%B3%8A/</loc>
+    <lastmod>2024-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -944,13 +958,6 @@
   
   <url>
     <loc>https://www.cznewborn.com/categories/Qt%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2024-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.cznewborn.com/categories/%E6%AF%8D%E5%88%86%E7%B1%BB1/</loc>
     <lastmod>2024-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1020,13 +1027,6 @@
   </url>
   
   <url>
-    <loc>https://www.cznewborn.com/categories/%E6%AF%8D%E5%88%86%E7%B1%BB1/%E5%AD%90%E5%88%86%E7%B1%BB1/</loc>
-    <lastmod>2024-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.cznewborn.com/categories/%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/</loc>
     <lastmod>2024-09-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -1069,13 +1069,6 @@
   </url>
   
   <url>
-    <loc>https://www.cznewborn.com/categories/%E6%AF%8D%E5%88%86%E7%B1%BB1/%E5%AD%90%E5%88%86%E7%B1%BB1/%E5%AD%90%E5%AD%90%E5%88%86%E7%B1%BB1/</loc>
-    <lastmod>2024-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.cznewborn.com/categories/%E6%8E%A7%E5%88%B6%E7%90%86%E8%AE%BA/%E6%BB%91%E6%A8%A1%E6%8E%A7%E5%88%B6/</loc>
     <lastmod>2024-09-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -1097,28 +1090,7 @@
   </url>
   
   <url>
-    <loc>https://www.cznewborn.com/categories/%E6%AF%8D%E5%88%86%E7%B1%BB1/%E5%AD%90%E5%88%86%E7%B1%BB2/</loc>
-    <lastmod>2024-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.cznewborn.com/categories/RTOS/ucosIII/</loc>
-    <lastmod>2024-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.cznewborn.com/categories/%E6%AF%8D%E5%88%86%E7%B1%BB2/</loc>
-    <lastmod>2024-09-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.cznewborn.com/categories/%E6%AF%8D%E5%88%86%E7%B1%BB2/%E5%AD%90%E5%88%86%E7%B1%BB3/</loc>
     <lastmod>2024-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1203,6 +1175,20 @@
   
   <url>
     <loc>https://www.cznewborn.com/categories/%E5%85%83%E5%99%A8%E4%BB%B6/%E5%9C%BA%E6%95%88%E5%BA%94%E6%99%B6%E4%BD%93%E7%AE%A1/</loc>
+    <lastmod>2024-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/categories/%E6%8E%A7%E5%88%B6/%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2024-09-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cznewborn.com/categories/%E6%8E%A7%E5%88%B6/%E6%8E%A7%E5%88%B6%E7%AE%97%E6%B3%95/%E6%A8%A1%E7%B3%8A%E6%8E%A7%E5%88%B6/</loc>
     <lastmod>2024-09-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
